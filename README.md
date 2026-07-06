@@ -17,7 +17,7 @@ This dashboard answers all questions in a single
 interactive view.
 
 ## Live Dashboard
-((https://public.tableau.com/app/profile/ananyaa.shahi/viz/HealthcareUtilizationBillingDashboard/HealthcareUtilizationBillingDashboard?publish=yes))
+https://public.tableau.com/app/profile/ananyaa.shahi/viz/HealthcareUtilizationBillingDashboard/HealthcareUtilizationBillingDashboard?publish=yes
 
 ## Dashboard Preview
 ![Dashboard Preview](dashboard-preview.png)
@@ -29,6 +29,7 @@ Used a FIXED level of detail expression to calculate
 accurate patient-level billing before averaging by 
 insurance provider — preventing multi-record patients 
 from skewing results:
+Formula: `{FIXED [Name] : SUM([Billing Amount])}`
 
 **Dynamic Parameter Toggle**
 Built a parameter-driven calculated field allowing users 
